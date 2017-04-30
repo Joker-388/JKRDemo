@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9zF-wS-gQG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ubh-fO-euf">
+            <objects>
+                <viewController id="9zF-wS-gQG" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xfb-tZ-8lS"/>
+                        <viewControllerLayoutGuide type="bottom" id="yV7-cS-paX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rxj-c2-0QU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yAq-XL-eUq">
+                                <rect key="frame" x="93" y="93" width="180" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lO-6d-Jqg">
+                                <rect key="frame" x="93" y="43" width="180" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="d3J-ut-aan"/>
+                                    <constraint firstAttribute="height" constant="30" id="tUw-sF-gPT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="起点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRz-95-oRg">
+                                <rect key="frame" x="36" y="43" width="40" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="G5d-Rj-deL"/>
+                                    <constraint firstAttribute="width" constant="40" id="t28-ko-GLP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="终点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t9v-xQ-8rT">
+                                <rect key="frame" x="36" y="93" width="40" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOV-jL-SQL">
+                                <rect key="frame" x="93" y="153" width="180" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="开始导航">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNavigation" destination="9zF-wS-gQG" eventType="touchUpInside" id="a2r-cg-ROm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yAq-XL-eUq" firstAttribute="height" secondItem="eOV-jL-SQL" secondAttribute="height" id="9DG-qw-3N4"/>
+                            <constraint firstItem="t9v-xQ-8rT" firstAttribute="centerY" secondItem="yAq-XL-eUq" secondAttribute="centerY" id="DgC-hl-1o7"/>
+                            <constraint firstItem="t9v-xQ-8rT" firstAttribute="top" secondItem="VRz-95-oRg" secondAttribute="bottom" constant="20" id="F2J-kk-Dtg"/>
+                            <constraint firstItem="t9v-xQ-8rT" firstAttribute="width" secondItem="VRz-95-oRg" secondAttribute="width" id="G5r-iz-1Ol"/>
+                            <constraint firstItem="VRz-95-oRg" firstAttribute="top" secondItem="xfb-tZ-8lS" secondAttribute="bottom" constant="23" id="IlS-Nh-i5C"/>
+                            <constraint firstItem="VRz-95-oRg" firstAttribute="leading" secondItem="rxj-c2-0QU" secondAttribute="leadingMargin" constant="20" id="KNO-3R-Os5"/>
+                            <constraint firstItem="5lO-6d-Jqg" firstAttribute="leading" secondItem="yAq-XL-eUq" secondAttribute="leading" id="LWc-BC-9HU"/>
+                            <constraint firstItem="t9v-xQ-8rT" firstAttribute="height" secondItem="VRz-95-oRg" secondAttribute="height" id="ObR-Nr-XWh"/>
+                            <constraint firstItem="VRz-95-oRg" firstAttribute="centerY" secondItem="5lO-6d-Jqg" secondAttribute="centerY" id="PDU-ba-qxa"/>
+                            <constraint firstItem="5lO-6d-Jqg" firstAttribute="width" secondItem="yAq-XL-eUq" secondAttribute="width" id="T9C-PF-eXu"/>
+                            <constraint firstItem="yAq-XL-eUq" firstAttribute="trailing" secondItem="eOV-jL-SQL" secondAttribute="trailing" id="cfQ-hu-ihC"/>
+                            <constraint firstItem="eOV-jL-SQL" firstAttribute="top" secondItem="yAq-XL-eUq" secondAttribute="bottom" constant="30" id="cz5-Kc-y1O"/>
+                            <constraint firstItem="yAq-XL-eUq" firstAttribute="leading" secondItem="eOV-jL-SQL" secondAttribute="leading" id="fwz-cf-8WL"/>
+                            <constraint firstItem="5lO-6d-Jqg" firstAttribute="height" secondItem="yAq-XL-eUq" secondAttribute="height" id="oT0-0V-HHy"/>
+                            <constraint firstItem="5lO-6d-Jqg" firstAttribute="leading" secondItem="VRz-95-oRg" secondAttribute="trailing" constant="17" id="qs6-fK-rOs"/>
+                            <constraint firstItem="t9v-xQ-8rT" firstAttribute="leading" secondItem="VRz-95-oRg" secondAttribute="leading" id="vkx-X8-kbs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="endField" destination="yAq-XL-eUq" id="Nsg-Nx-KR2"/>
+                        <outlet property="startField" destination="5lO-6d-Jqg" id="cXa-i5-XwD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wPo-3Q-4k8" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
